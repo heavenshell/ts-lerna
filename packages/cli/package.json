@@ -1,0 +1,19 @@
+{
+  "name": "cli",
+  "version": "0.0.0",
+  "description": "my lerna cli app",
+  "author": "Shinya Ohyanagi",
+  "private": true,
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "dev": "ts-node src/cli.ts"
+  },
+  "dependencies": {
+    "inquirer": "7.3.3"
+  },
+  "devDependencies": {
+    "@types/inquirer": "7.3.1"
+  }
+}

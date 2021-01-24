@@ -1,0 +1,37 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "main": "n/a",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@emotion/core": "11.0.0",
+    "@emotion/react": "11.1.4",
+    "@emotion/styled": "11.0.0",
+    "@reduxjs/toolkit": "1.5.0",
+    "antd": "4.10.3",
+    "axios": "0.21.1",
+    "date-fns": "2.16.1",
+    "emotion": "11.0.0",
+    "formik": "2.2.6",
+    "path-to-regexp": "6.2.0",
+    "query-string": "5.1.1",
+    "react-redux": "7.2.2",
+    "redux": "4.0.5",
+    "redux-thunk": "2.3.0",
+    "styled-system": "5.1.5",
+    "yup": "0.32.8"
+  },
+  "devDependencies": {
+    "@types/query-string": "5.1.0",
+    "@types/react-redux": "7.1.16",
+    "@types/styled-system": "5.1.10",
+    "@types/yup": "0.29.11",
+    "axios-mock-adapter": "1.19.0",
+    "redux-devtools-extension": "2.13.8"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
+  }
+}
