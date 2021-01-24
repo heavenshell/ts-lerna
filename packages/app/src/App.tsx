@@ -7,10 +7,10 @@ import './index.less'
 import { configureStore } from './modules'
 import Routes from './routes'
 
-    const App = () => (
-      <Provider store={configureStore()}>
-        <Routes />
-      </Provider>
-    )
+const App = () => (
+  <Provider store={configureStore()}>
+    <Routes />
+  </Provider>
+)
 
 render(<App />, document.getElementById('app'))
