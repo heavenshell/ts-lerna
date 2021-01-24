@@ -1,5 +1,36 @@
 {
-  "extends": [
-    "config:base"
+  "timezone": "Asia/Tokyo",
+  "extends": ["config:base"],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "pinDigests": false,
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "packagePatterns": [
+        "*"
+      ]
+    },
+    {
+      "depTypeList": [
+        "dependencies"
+      ],
+      "groupName": "dependencies"
+    },
+    {
+      "depTypeList": [
+        "devDependencies"
+      ],
+      "groupName": "devDependencies"
+    }
+  ],
+  "ignoreDeps": [
+    "query-string",
+    "@types/query-string"
+  ],
+  "schedule": [
+    "after 10pm and before 5am on sunday"
   ]
 }
