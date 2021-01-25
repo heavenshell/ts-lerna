@@ -1,5 +1,7 @@
 # ts-lerna
 
+![build](https://github.com/heavenshell/ts-lerna/workflows/build/badge.svg)
+
 My lerna and yarn workspace.
 
 ## cli

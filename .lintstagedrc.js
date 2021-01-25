@@ -7,9 +7,6 @@ module.exports = {
     ]
   },
   '*.md': (files) =>  {
-    return [
-      `prettier --parser markdown --write`,
-      `markdownlint`
-    ]
+    return [`markdownlint`]
   }
 }
