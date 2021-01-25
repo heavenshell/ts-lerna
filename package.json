@@ -83,6 +83,9 @@
   },
   "scripts": {
     "bump": "lerna version --no-git-tag-version --no-push",
+    "build": "run-p -l build:*cli",
+    "build:app": "lerna run build --scope app",
+    "build:cli": "lerna run build --scope cli",
     "lint": "run-p -l lint:*",
     "lint:md": "markdownlint README.md",
     "lint:ts": "eslint 'packages/*/**/*.ts{,x}'",
