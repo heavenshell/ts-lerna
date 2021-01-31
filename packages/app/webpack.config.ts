@@ -29,7 +29,7 @@ const config: Configuration = {
       rewrites: [{ from: /^\/*/, to: '/index.html' }],
     },
     host: '0.0.0.0',
-    port: 3000,
+    port: 8080,
     hot: true,
     liveReload: true,
   },

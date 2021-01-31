@@ -49,6 +49,7 @@ module.exports = {
           rootDir,
           path.join(rootDir, './packages/cli'),
           path.join(rootDir, './packages/app'),
+          path.join(rootDir, './packages/next-app'),
         ],
         devDependencies: [
           '**/*.setup.{js,ts}',

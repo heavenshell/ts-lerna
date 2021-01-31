@@ -1,7 +1,7 @@
 module.exports = {
   '*.ts?(x)': (files) => {
     return [
-      'tsc -p tsconfig.json --noEmit',
+      // 'tsc -p tsconfig.json --noEmit',
       `eslint --fix ${files.join(' ')}`,
       // `eslint --fix`,
     ]
