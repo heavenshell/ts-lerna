@@ -15,7 +15,7 @@ export const Loading = () => {
   )
 }
 
-type Props = {
+export type Props = {
   current: number
   total: number
   results: NamedAPIResource<string>[]

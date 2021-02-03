@@ -2,6 +2,7 @@ import { parse } from 'url'
 import { ParsedUrlQuery } from 'querystring'
 
 import axios from 'axios'
+import { NextRouter } from 'next/router'
 import useSWR from 'swr'
 import { match } from 'path-to-regexp'
 
@@ -36,12 +37,20 @@ export const getPokemonImage = (url: string) => {
   return ''
 }
 
-export const useGetPokemons = (isReady: boolean, query?: ParsedUrlQuery) => {
-  const param = isReady ? getKey(query) : null
-  const { data, error } = useSWR(param, getPokemons)
-  return {
-    data,
-    isLoading: !error && !data,
-    isError: error,
+export const useGetPokemon = (router: NextRouter) => {
+  const useGetPokemons = () => {
+    const param = router.isReady ? getKey(router.query) : null
+    const { data, error } = useSWR(param, getPokemons)
+    return {
+      data,
+      isLoading: !error && !data,
+      isError: error,
+    }
   }
+
+  const onChange = (page: number) => {
+    const query = `?page=${page}`
+    router.push(`/${query}`)
+  }
+  return { onChange, useGetPokemons }
 }
