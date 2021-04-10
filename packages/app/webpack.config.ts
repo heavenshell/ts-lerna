@@ -14,7 +14,11 @@ const TerserPlugin = require('terser-webpack-plugin')
 
 const tsLoaderWorkers = cpus().length > 3 ? cpus().length - 2 : 1
 
-const config: Configuration = {
+type DevServer = {
+  [key: string]: any // eslint-disable-line @typescript-eslint/no-explicit-any
+}
+
+const config: Configuration & DevServer = {
   devtool: 'source-map',
   entry: {
     app: `${__dirname}/src/App.tsx`,
