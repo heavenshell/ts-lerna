@@ -12,7 +12,7 @@
     "dev": "ts-node src/cli.ts"
   },
   "dependencies": {
-    "inquirer": "7.3.3"
+    "inquirer": "8.0.0"
   },
   "devDependencies": {
     "@types/inquirer": "7.3.1"
