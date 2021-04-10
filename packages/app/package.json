@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "1.5.1",
-    "date-fns": "2.19.0",
+    "date-fns": "2.20.1",
     "formik": "2.2.6",
     "path-to-regexp": "6.2.0",
     "query-string": "5.1.1",
