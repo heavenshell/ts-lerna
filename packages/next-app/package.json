@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@zeit/next-less": "1.0.1",
-    "next": "10.2.0"
+    "next": "10.2.2"
   },
   "devDependencies": {
     "@types/webpack": "4.41.27",
