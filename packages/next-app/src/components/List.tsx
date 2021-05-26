@@ -13,7 +13,7 @@ type Props = {
 
 export const List: React.FC<Props> = ({ results, loading }) => (
   <Skeleton loading={loading}>
-    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+    <Row gutter={{ xs: 1, sm: 3, md: 4, lg: 4 }}>
       {results.map(({ name, url }) => {
         const image = getPokemonImage(url)
         return (
