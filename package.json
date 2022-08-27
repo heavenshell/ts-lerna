@@ -11,7 +11,7 @@
   "dependencies": {
     "@emotion/react": "11.10.0",
     "@emotion/styled": "11.10.0",
-    "antd": "4.22.7",
+    "antd": "4.22.8",
     "axios": "0.27.2",
     "emotion": "11.0.0",
     "path-to-regexp": "6.2.1",
