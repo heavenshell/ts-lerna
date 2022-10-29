@@ -91,7 +91,7 @@
   },
   "resolutions": {
     "@types/react": "17.0.52",
-    "@types/react-dom": "17.0.17"
+    "@types/react-dom": "17.0.18"
   },
   "scripts": {
     "bump": "lerna version --no-git-tag-version --no-push",
