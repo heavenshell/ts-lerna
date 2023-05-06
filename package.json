@@ -9,9 +9,9 @@
     "packages/*"
   ],
   "dependencies": {
-    "@emotion/react": "11.10.8",
-    "@emotion/styled": "11.10.8",
-    "antd": "4.24.9",
+    "@emotion/react": "11.11.0",
+    "@emotion/styled": "11.11.0",
+    "antd": "4.24.10",
     "axios": "0.27.2",
     "emotion": "11.0.0",
     "path-to-regexp": "6.2.1",
