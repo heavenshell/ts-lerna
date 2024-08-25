@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "@emotion/react": "11.13.0",
+    "@emotion/react": "11.13.3",
     "@emotion/styled": "11.13.0",
     "antd": "4.24.16",
     "axios": "0.28.1",
