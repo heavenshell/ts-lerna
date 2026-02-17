@@ -90,8 +90,8 @@
     "webpack-dev-server": "3.11.2"
   },
   "resolutions": {
-    "@types/react": "17.0.91",
-    "@types/react-dom": "17.0.26"
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
   },
   "scripts": {
     "bump": "lerna version --no-git-tag-version --no-push",
